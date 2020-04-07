@@ -3,22 +3,22 @@
 ARCH="amd64"
 FRP_VERSION="0.32.1"
 echo TARGETPLATFORM=${TARGETPLATFORM}
-if [[ -n "${TARGETPLATFORM}" ]]; then
+if [ -n "${TARGETPLATFORM}" ]; then
     echo "TARGETPLATFORM=${TARGETPLATFORM} exist"
-    if ["${TARGETPLATFORM}" == "linux/amd64"]; then
-    $ARCH = "amd64"
+    if [ "${TARGETPLATFORM}" == "linux/amd64" ]; then
+    ARCH="amd64"
     fi
-    if ["${TARGETPLATFORM}" == "linux/386"]; then
-    $ARCH = "386"
+    if [ "${TARGETPLATFORM}" == "linux/386" ]; then
+    ARCH="386"
     fi
-    if ["${TARGETPLATFORM}" == "linux/arm64"]; then
-    $ARCH = "arm64"
+    if [ "${TARGETPLATFORM}" == "linux/arm64" ]; then
+    ARCH="arm64"
     fi
-    if ["${TARGETPLATFORM}" == "linux/arm/v7"]; then
-    $ARCH = "arm"
+    if [ "${TARGETPLATFORM}" == "linux/arm/v7" ]; then
+    ARCH="arm"
     fi
-    if ["${TARGETPLATFORM}" == "linux/arm/v6"]; then
-    $ARCH = "arm"
+    if [ "${TARGETPLATFORM}" == "linux/arm/v6" ]; then
+    ARCH="arm"
     fi
 fi
 
