@@ -3,7 +3,7 @@ LABEL author ="huangzulin<335882264@qq.com>"
 
 COPY install.sh .
 
-RUN ./install.sh
+RUN chmod +x ./install.sh && ./install.sh
 
 VOLUME /etc/frp
 
