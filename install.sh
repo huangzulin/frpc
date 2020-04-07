@@ -2,9 +2,8 @@
 
 ARCH="amd64"
 FRP_VERSION="0.32.1"
-
+echo TARGETPLATFORM=${TARGETPLATFORM}
 if [[ -n "${TARGETPLATFORM}" ]]; then
-    echo ${TARGETPLATFORM}
     if [${TARGETPLATFORM} == "linux/amd64"]; then
     $ARCH = "amd64"
     fi
@@ -22,7 +21,7 @@ if [[ -n "${TARGETPLATFORM}" ]]; then
     fi
 fi
 
-echo ${ARCH}
+echo ARCH=${ARCH}
 
 
 apk add --no-cache wget
