@@ -32,7 +32,7 @@ tar xzf frp.tar.gz
 rm -rf frp.tar.gz
 apk del wget
 
-mv frp_${FRP_VERSION}_linux_${ARCH}/frps /usr/local/frpc
+mv frp_${FRP_VERSION}_linux_${ARCH}/frpc /usr/local/frpc
 chmod +x /usr/local/frpc
 rm frp_* -rf
 
