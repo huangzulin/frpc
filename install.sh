@@ -26,7 +26,7 @@ echo ARCH=${ARCH}
 
 
 apk add --no-cache wget
-wget --no-check-certificate https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_${ARCH}.tar.gz \
+wget --no-check-certificate -nv https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_${ARCH}.tar.gz \
 -e use_proxy=yes -e http_proxy=http://192.168.1.101:7890 -O frp.tar.gz
 tar xzf frp.tar.gz
 rm -rf frp.tar.gz
